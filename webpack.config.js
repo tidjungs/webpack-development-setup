@@ -6,5 +6,10 @@ module.exports = {
     app: [
       './index'
     ]
+  },
+  modules: {
+    rules: [
+      { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' }
+    ]
   }
 }
