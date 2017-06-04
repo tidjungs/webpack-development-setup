@@ -1,4 +1,5 @@
 import React from 'react'
+import './Root.scss'
 
 function getMessage() {
   return 'Hello World'
@@ -6,7 +7,7 @@ function getMessage() {
 
 export default () => (
   <div>
-    <h1>{getMessage()}</h1>
+    <h1 className='hello'>{getMessage()}</h1>
     <div>Hello React Hot Loader!</div>
   </div>
 )
